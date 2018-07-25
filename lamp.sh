@@ -1,6 +1,7 @@
 if [ "`lsb_release -is`" == "Ubuntu" ] || [ "`lsb_release -is`" == "Debian" ]
 then
-    
+    echo "Updating Ubuntu"
+    sudo apt-get update
     echo "Installing PHP 7"
     sudo apt-get install php
     echo "________________"
